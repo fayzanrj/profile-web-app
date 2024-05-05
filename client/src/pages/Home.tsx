@@ -7,13 +7,13 @@ const Home = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="fixed top-0 z-50 flex items-center justify-between w-full px-10 py-5">
-        <img src={logo} width={100} height={100} alt="logo" />
+      <nav className="fixed top-0 z-50 flex items-center justify-between w-full px-2 py-5 md:px-10">
+        <img src={logo} alt="logo" className="w-20 md:w-28" />
         <ul>
-          <li className="inline mx-3 text-lg font-semibold text-black sm:text-white">
+          <li className="inline mx-1.5 md:mx-3 text-lg font-semibold text-black sm:text-white">
             <Link to={"/login"}>LOG IN</Link>
           </li>
-          <li className="inline px-4 py-2 mx-3 text-lg font-semibold text-white bg-[#3B37FF] rounded-md sm:bg-white sm:text-black">
+          <li className="inline px-2 mx:px-4 py-1.5 md:py-2 mx-1.5 md:mx-3 text-lg font-semibold text-white bg-[#3B37FF] rounded-md sm:bg-white sm:text-black">
             <Link to={"/signup"}>SIGN UP</Link>
           </li>
         </ul>
