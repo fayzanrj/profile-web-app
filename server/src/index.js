@@ -25,11 +25,7 @@ admin.initializeApp({
 // Initialising Express App
 const app = express();
 // Enabling CORS middleware
-app.use(
-  cors({
-    credentials: true,
-  })
-);
+app.use(cors());
 
 // Middleware to compress responses
 app.use(compression());
